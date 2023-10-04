@@ -1,0 +1,44 @@
+.container-description {
+  background-color: var(--color-white);
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.container-description .container-description_title{
+  font-family: var(--font-ClashDisplay-lighy);
+  width: 90%;
+}
+.container-description .container-description_cards{
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+}
+.container-description .container-description_cards .container-description_card{
+  margin-top: 36px;
+}
+.container-description_card .card-title{
+  font-family: var(--font-ClashDisplay-regular);
+  margin-top: 16px;
+}
+.container-description_card .card-description{
+  font-family: var(--font-ClashDisplay-lighy);
+  font-size: 1.1rem;
+  margin-top: 16px;
+}
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+@media only screen and (min-width: 800px) {
+  .container-description .container-description_title{
+    text-align: center;
+    width: 100%;
+  }
+  .container-description .container-description_cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .container-description .container-description_cards .container-description_card{
+    width: 300px;
+  }
+}
