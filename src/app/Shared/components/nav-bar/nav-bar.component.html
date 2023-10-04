@@ -1,0 +1,33 @@
+<nav class="navbar-container">
+  <div class="navbar-control">
+    <input
+      class="navbar-control-search"
+      type="text"
+      placeholder="buscar..."
+      [ngClass]="{
+        'show_navbar-control-search': showSearchBar
+      }"
+    >
+    <h2 class="navbar-control-title">Demo Tienda</h2>
+    <div class="navbar-control-icons">
+      <button class="navbar-control-icons_car">🛒</button>
+      <button class="navbar-control-icons_user">User</button>
+      <button class="navbar-control-icons_search" (click)="handleShowSearchBar()">🔍</button>
+      <button class="navbar-control-icons_menu" (click)="handleShowNavBar()">😊</button>
+    </div>
+  </div>
+  <div
+  class="navbar-menu"
+  [ngClass]="{
+    'show__navbar-menu': showNavBar
+  }">
+    <ul class="navbar-menu-ul">
+      <li class="navbar-menu-li">Carrito</li>
+      <li class="navbar-menu-li">Plant Pots</li>
+      <li class="navbar-menu-li">Doors</li>
+      <li class="navbar-menu-li">Tables</li>
+      <li class="navbar-menu-li">Chairs</li>
+      <li class="navbar-menu-li">Dining Rooms</li>
+    </ul>
+  </div>
+</nav>

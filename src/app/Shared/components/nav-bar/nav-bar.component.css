@@ -1,0 +1,141 @@
+.navbar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-transparent);
+  position: relative;
+}
+.navbar-container .navbar-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-ClashDisplay-regular);
+  height: 69px;
+  padding: 0px 10px;
+  background-color: var(--color-white);
+}
+.navbar-container .navbar-control .navbar-control-title {
+  width: 100%;
+}
+.navbar-container .navbar-control .navbar-control-search {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: calc(100vw - 20px);
+  padding: 10px;
+  border: 2px solid var(--color-border-dark);
+  border-radius: 10px;
+}
+.navbar-container .navbar-control .navbar-control-search.show_navbar-control-search {
+  top: 72px;
+}
+.navbar-container .navbar-control .navbar-control-icons {
+  display: flex;
+}
+.navbar-container .navbar-control .navbar-control-icons .navbar-control-icons_car {
+  display: none;
+}
+.navbar-container .navbar-control .navbar-control-icons button {
+  cursor: pointer;
+  margin: 0px 3px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+}
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* --------------------------------------- */
+.navbar-container .navbar-menu {
+  width: 200px;
+  background-color: var(--color-white);
+  position: absolute;
+  right: -200px;
+  top: 69px;
+  transition: 1s all ease;
+}
+.navbar-container .navbar-menu.show__navbar-menu {
+  right: 0px;
+}
+.navbar-container .navbar-menu .navbar-menu-ul .navbar-menu-li {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: 1s all ease;
+}
+.navbar-container .navbar-menu .navbar-menu-ul .navbar-menu-li:hover {
+  background-color: var(--color-border-dark);
+}
+/* //////////////////////////////////////////////// */
+/* //////////////////////////////////////////////// */
+/* //////////////////////////////////////////////// */
+/* //////////////////////////////////////////////// */
+@media only screen and (min-width: 700px) {
+  .navbar-container .navbar-control .navbar-control-title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .navbar-container {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+  }
+  .navbar-container .navbar-control .navbar-control-search {
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    z-index: 10;
+    width: 250px;
+    padding: 10px;
+    border: 2px solid var(--color-border-dark);
+    border-radius: 10px;
+  }
+  .navbar-container .navbar-control .navbar-control-search.show_navbar-control-search {
+    top: 15px;
+  }
+  .navbar-container .navbar-control .navbar-control-icons {
+    position: absolute;
+    right: 50px;
+  }
+  .navbar-container .navbar-control .navbar-control-icons .navbar-control-icons_car {
+    display: block;
+  }
+  .navbar-container .navbar-control .navbar-control-icons .navbar-control-icons_search {
+    display: none;
+  }
+  .navbar-container .navbar-control .navbar-control-icons .navbar-control-icons_menu {
+    display: none;
+  }
+  .navbar-container .navbar-menu{
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-container .navbar-menu .navbar-menu-ul {
+    display: flex;
+    width: 80%;
+    border-top: 1px solid var(--color-border-grey);
+  }
+  .navbar-container .navbar-menu .navbar-menu-ul .navbar-menu-li:nth-child(1) {
+    display: none;
+  }
+  .navbar-container .navbar-menu .navbar-menu-ul .navbar-menu-li {
+    padding: 10px 0px;
+    font-size: 1rem;
+  }
+  .navbar-container .navbar-menu .navbar-menu-ul .navbar-menu-li:hover {
+    background-color: var(--color-transparent);
+    color: var(--color-text-dark);
+    transform: scale(1.1);
+  }
+}
+@media only screen and (min-width: 1110px) {
+  .navbar-container .navbar-control .navbar-control-search {
+    width: 400px;
+  }
+}
+
