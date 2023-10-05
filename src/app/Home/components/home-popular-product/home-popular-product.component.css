@@ -1,0 +1,71 @@
+.container-popular-products{
+  background-color: var(--color-white);
+  padding: 24px 16px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-popular-products .poular-product-title{
+  font-family: var(--font-ClashDisplay-medium);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.container-popular-products .popular-products_container-cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.popular-products_container-cards .popular-products_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px;
+  width: 300px;
+  height: 350px;
+}
+.popular-products_container-cards .popular-products_card img{
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.container-popular-products .popular-products_card .popular-products_card-title{
+  font-size: 1rem;
+  font-family: var(--font-ClashDisplay-medium);
+  text-transform: capitalize;
+  margin-top: 5px;
+  align-self: flex-start;
+}
+.container-popular-products .container-popular-btn{
+  background-color: transparent;
+  font-family: var(--font-ClashDisplay-regular);
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  position: relative;
+  top: -30px;
+}
+.container-popular-products .container-popular-btn:hover{
+  text-decoration: underline;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 700px) {
+  .container-popular-products .poular-product-title{
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .container-popular-products .popular-products_container-cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}

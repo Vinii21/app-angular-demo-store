@@ -4,6 +4,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { SharedModule } from '../Shared/shared.module';
 import { HomeHeroComponent } from './components/home-hero/home-hero.component';
 import { HomeDescriptionComponent } from './components/home-description/home-description.component';
+import { HomePopularProductComponent } from './components/home-popular-product/home-popular-product.component';
 
 
 
@@ -11,7 +12,8 @@ import { HomeDescriptionComponent } from './components/home-description/home-des
   declarations: [
     HomepageComponent,
     HomeHeroComponent,
-    HomeDescriptionComponent
+    HomeDescriptionComponent,
+    HomePopularProductComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,10 @@
+<div class="container-popular-products">
+  <h3 class="poular-product-title">Nuestros productos populares</h3>
+  <div class="popular-products_container-cards">
+    <div *ngFor="let product of products" class="popular-products_card">
+      <img [src]="product.url" [alt]="product.name" width="200">
+      <span class="popular-products_card-title">{{product.name}}</span>
+    </div>
+  </div>
+  <button class="container-popular-btn">Ver colección</button>
+</div>
