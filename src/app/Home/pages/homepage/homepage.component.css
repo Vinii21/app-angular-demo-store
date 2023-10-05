@@ -1,0 +1,8 @@
+.shared-nav-bar{
+  position: relative;
+  z-index: 100;
+}
+.home-hero{
+  position: relative;
+  z-index: -1;
+}

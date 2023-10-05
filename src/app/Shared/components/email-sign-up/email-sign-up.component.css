@@ -1,0 +1,72 @@
+.container-email-signup{
+   display: flex;
+   flex-direction: column;
+   padding: 24px;
+   background-image: url("https://images.unsplash.com/photo-1511974212900-b42a18e19eb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80");
+   background-repeat: no-repeat;
+   background-position-y: -45px;
+   background-size: cover;
+   filter: saturate(60%);
+}
+.container-email-signup .email-signup-title{
+  font-family: var(--font-ClashDisplay-lighy);
+  color: var(--color-white);
+}
+.container-email-signup .email-signup-description{
+  font-family: var(--font-ClashDisplay-regular);
+  color: var(--color-white);
+  margin: 20px 0px;
+}
+.container-email-signup .email-signup-ul .email-signup-li{
+  color: var(--color-white);
+  margin: 10px 0px;
+  padding: 5px;
+  background-color: var(--color-primary);
+  width: 170px;
+}
+.container-email-signup .email-signup-ul .email-signup-li span{
+  margin-right: 10px;
+}
+.container-email-signup .container-email-input-group{
+  width: 100%;
+  max-width: 680px;
+  height: 50px;
+  display: flex;
+  margin: 10px 0px;
+  margin-top: 20px;
+}
+.container-email-signup .container-email-input-group .input-group_box{
+  border: none;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  color: var(--color-text-dark);
+  font-family: var(--font-ClashDisplay-medium);
+}
+.container-email-signup .container-email-input-group .input-group_btn{
+  border: none;
+  width: 30%;
+  height: 100%;
+  padding: 5px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+}
+/* ////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 700px) {
+  .container-email-signup{
+    align-items: center;
+    padding: 24px 60px;
+    background-position: center;
+ }
+  .container-email-signup .email-signup-ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .container-email-signup .container-email-input-group .input-group_box{
+    font-size: 1.1rem;
+  }
+}
