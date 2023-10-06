@@ -1,4 +1,8 @@
-<nav class="navbar-container">
+<nav class="navbar-container"
+  [ngClass]="{
+    'setPositionInProducts': setPosition
+  }"
+>
   <div class="navbar-control">
     <input
       class="navbar-control-search"
@@ -23,11 +27,10 @@
   }">
     <ul class="navbar-menu-ul">
       <li class="navbar-menu-li">Carrito</li>
-      <li class="navbar-menu-li">Plant Pots</li>
-      <li class="navbar-menu-li">Doors</li>
-      <li class="navbar-menu-li">Tables</li>
-      <li class="navbar-menu-li">Chairs</li>
-      <li class="navbar-menu-li">Dining Rooms</li>
+      <li class="navbar-menu-li">Sobre nosotros</li>
+      <li class="navbar-menu-li">Contacto</li>
+      <li class="navbar-menu-li">Productos</li>
+
     </ul>
   </div>
 </nav>

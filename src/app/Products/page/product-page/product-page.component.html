@@ -1,4 +1,8 @@
-<shared-nav-bar></shared-nav-bar>
+<shared-nav-bar [setPosition]="setPosition" class="shared-nav-bar"></shared-nav-bar>
 <product-header></product-header>
-<!-- <shared-email-signup></shared-email-signup>
-<shared-footer></shared-footer> -->
+<main class="container-page-products">
+  <product-siderbar class="product-sidebar"></product-siderbar>
+  <product-list class="product-list"></product-list>
+</main>
+<shared-email-signup></shared-email-signup>
+<shared-footer></shared-footer>

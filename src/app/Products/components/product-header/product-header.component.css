@@ -34,7 +34,7 @@
 }
 @media only screen and (min-width: 800px) {
   .container-header-product{
-    top: 108px;
+    top: 0;
     height: 130px;
   }
   .container-header-product .header-product__title{

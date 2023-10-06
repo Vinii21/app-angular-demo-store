@@ -1,0 +1,41 @@
+<div class="container-sidebar-products">
+  <button (click)="handleShowFilter()" class="sidebar-products-btn">Filtros v</button>
+  <h3 class="sidebar-products-title">Filtros</h3>
+  <div class="filter-products-container"
+    [ngClass]="{
+      'showFilter': showFilter
+    }"
+  >
+    <div class="filter-type-product">
+      <h4 class="filter-title">Tipo de producto</h4>
+      <div class="filter-input-group">
+        <input type="checkbox">
+        <label for="">Puertas</label>
+      </div>
+      <div class="filter-input-group">
+        <input type="checkbox">
+        <label for="">Puertas</label>
+      </div>
+      <div class="filter-input-group">
+        <input type="checkbox">
+        <label for="">Puertas</label>
+      </div>
+    </div>
+    <div class="filter-price-product">
+      <h4 class="filter-title">Precios</h4>
+      <div class="filter-input-group">
+        <input type="radio" name="p">
+        <label for="">0 - 100</label>
+      </div>
+      <div class="filter-input-group">
+        <input type="radio" name="p">
+        <label for="">0 - 100</label>
+      </div>
+      <div class="filter-input-group">
+        <input type="radio" name="p">
+        <label for="">0 - 100</label>
+      </div>
+    </div>
+    <button class="filter-btn">Buscar</button>
+  </div>
+</div>

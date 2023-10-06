@@ -1,0 +1,6 @@
+<div class="container-products-list">
+  <div *ngFor="let card of cards" class="card-product">
+    <img class="card-img" [src]="card.url" alt="">
+    <span class="card-title">{{card.name}}</span>
+  </div>
+</div>

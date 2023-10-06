@@ -1,0 +1,49 @@
+.container-products-list{
+  background-color: var(--color-white);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+}
+.container-products-list .card-product{
+  width: 200px;
+  height: 288px;
+  margin: 3px;
+}
+.card-product .card-img{
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 1s ease;
+  position: relative;
+  z-index: 1;
+}
+.card-product .card-img:hover{
+  transform: scale(1.1);
+}
+.card-product .card-title{
+  font-family: var(--font-ClashDisplay-lighy);
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 800px) {
+  .container-products-list{
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .container-products-list .card-product{
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .container-products-list{
+    justify-content: center;
+  }
+}
