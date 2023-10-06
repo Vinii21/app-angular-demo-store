@@ -19,6 +19,7 @@
 }
 .navbar-container .navbar-control .navbar-control-title {
   width: 100%;
+  cursor: pointer;
 }
 .navbar-container .navbar-control .navbar-control-search {
   position: absolute;
@@ -72,6 +73,10 @@
 }
 .navbar-container .navbar-menu .navbar-menu-ul .navbar-menu-li:hover {
   background-color: var(--color-border-dark);
+}
+.navbar-container .navbar-menu .navbar-menu-ul .navbar-menu-li.active {
+  background-color: var(--color-border-dark);
+  font-size: 1.3rem;
 }
 /* //////////////////////////////////////////////// */
 /* //////////////////////////////////////////////// */
@@ -134,12 +139,12 @@
   }
   .navbar-container .navbar-menu .navbar-menu-ul .navbar-menu-li {
     padding: 10px 0px;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .navbar-container .navbar-menu .navbar-menu-ul .navbar-menu-li:hover {
-    background-color: var(--color-transparent);
     color: var(--color-text-dark);
-    transform: scale(1.1);
+    background-color: var(--color-border-grey);
+    font-size: 1.3rem;
   }
 }
 @media only screen and (min-width: 1110px) {

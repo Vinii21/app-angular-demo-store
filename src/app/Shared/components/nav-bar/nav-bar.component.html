@@ -12,7 +12,7 @@
         'show_navbar-control-search': showSearchBar
       }"
     >
-    <h2 class="navbar-control-title">Demo Tienda</h2>
+    <h2 routerLink="" class="navbar-control-title">Demo Tienda</h2>
     <div class="navbar-control-icons">
       <button class="navbar-control-icons_car">🛒</button>
       <button class="navbar-control-icons_user">User</button>
@@ -29,7 +29,13 @@
       <li class="navbar-menu-li">Carrito</li>
       <li class="navbar-menu-li">Sobre nosotros</li>
       <li class="navbar-menu-li">Contacto</li>
-      <li class="navbar-menu-li">Productos</li>
+      <li
+      class="navbar-menu-li"
+      [ngClass]="{
+        'active': activeProduct
+      }"
+      routerLink="products"
+      >Productos</li>
 
     </ul>
   </div>
