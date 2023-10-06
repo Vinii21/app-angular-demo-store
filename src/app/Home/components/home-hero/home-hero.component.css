@@ -1,5 +1,6 @@
 .container-hero {
   background-color: var(--color-dark-primary);
+  padding-top: 100px;
 }
 
 .container-hero .container-hero_sections{

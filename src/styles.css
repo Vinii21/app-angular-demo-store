@@ -19,6 +19,7 @@
   --color-text-dark: #19121a;
   --color-text-light: #726E8D;
   --color-transparent: #ffffff00;
+  --color-grey-dark: #c1c1c19e;
 }
 *{
   box-sizing: border-box;
