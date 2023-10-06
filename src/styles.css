@@ -20,6 +20,7 @@
   --color-text-light: #726E8D;
   --color-transparent: #ffffff00;
   --color-grey-dark: #c1c1c19e;
+  --color-bg-dark: #00000079;
 }
 *{
   box-sizing: border-box;
