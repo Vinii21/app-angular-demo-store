@@ -42,6 +42,7 @@
   .container-products-list{
     justify-content: flex-start;
     align-content: flex-start;
+    padding: 0px 10px;
   }
   .container-products-list .card-product{
     margin: 10px;
