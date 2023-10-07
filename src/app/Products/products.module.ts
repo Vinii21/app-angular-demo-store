@@ -5,6 +5,7 @@ import { ProductHeaderComponent } from './components/product-header/product-head
 import { SharedModule } from '../Shared/shared.module';
 import { ProductSiderbarComponent } from './components/product-siderbar/product-siderbar.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +18,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   exports: [
     ProductPageComponent

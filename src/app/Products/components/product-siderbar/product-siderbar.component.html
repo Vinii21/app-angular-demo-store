@@ -9,33 +9,41 @@
     <div class="filter-type-product">
       <h4 class="filter-title">Tipo de producto</h4>
       <div class="filter-input-group">
-        <input type="checkbox">
-        <label for="">Puertas</label>
+        <input type="checkbox" [(ngModel)]="categories.todo" name="todo" (click)="changeMarketTodos()">
+        <label for="">Todos</label>
       </div>
       <div class="filter-input-group">
-        <input type="checkbox">
-        <label for="">Puertas</label>
+        <input type="checkbox" [(ngModel)]="categories.comedor" name="comedor" (click)="changMarket()">
+        <label for="">Comedor</label>
       </div>
       <div class="filter-input-group">
-        <input type="checkbox">
-        <label for="">Puertas</label>
+        <input type="checkbox" [(ngModel)]="categories.silla" name="silla" (click)="changMarket()">
+        <label for="">Sillas</label>
+      </div>
+      <div class="filter-input-group">
+        <input type="checkbox" [(ngModel)]="categories.sofa" name="sofa" (click)="changMarket()">
+        <label for="">Sofas</label>
       </div>
     </div>
     <div class="filter-price-product">
       <h4 class="filter-title">Precios</h4>
       <div class="filter-input-group">
-        <input type="radio" name="p">
-        <label for="">0 - 100</label>
+        <input type="radio" name="p" value="30" [(ngModel)]="selectedPriceValue" defaultChecked>
+        <label for="">$30 - $++</label>
       </div>
       <div class="filter-input-group">
-        <input type="radio" name="p">
-        <label for="">0 - 100</label>
+        <input type="radio" name="p" value="30 100" [(ngModel)]="selectedPriceValue">
+        <label for="">$30 - $100</label>
       </div>
       <div class="filter-input-group">
-        <input type="radio" name="p">
-        <label for="">0 - 100</label>
+        <input type="radio" name="p" value="100 250" [(ngModel)]="selectedPriceValue">
+        <label for="">$100 - $250</label>
+      </div>
+      <div class="filter-input-group">
+        <input type="radio" name="p" value="250" [(ngModel)]="selectedPriceValue">
+        <label for="">$250 - $++</label>
       </div>
     </div>
-    <button class="filter-btn">Buscar</button>
+    <button class="filter-btn" (click)="prueba()">Buscar</button>
   </div>
 </div>

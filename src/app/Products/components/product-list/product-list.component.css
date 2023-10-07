@@ -11,6 +11,11 @@
   width: 200px;
   height: 288px;
   margin: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.container-products-list .card-product.view{
+  width: 300px;
 }
 .card-product .card-img{
   width: 100%;
@@ -22,7 +27,7 @@
   z-index: 1;
 }
 .card-product .card-img:hover{
-  transform: scale(1.1);
+  transform: scale(1);
 }
 .card-product .card-title{
   font-family: var(--font-ClashDisplay-lighy);
@@ -40,6 +45,9 @@
   }
   .container-products-list .card-product{
     margin: 10px;
+  }
+  .card-product .card-img:hover{
+    transform: scale(1.1);
   }
 }
 @media only screen and (min-width: 1000px) {

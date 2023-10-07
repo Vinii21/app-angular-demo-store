@@ -1,4 +1,6 @@
 export interface Product {
   url: string;
-  name: string
+  name: string;
+  category?: string;
+  price?: number
 }
