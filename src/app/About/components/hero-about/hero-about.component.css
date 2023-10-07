@@ -1,0 +1,32 @@
+.container-hero-about{
+  position: relative;
+  top: 69px;
+  height: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--color-dark-primary);
+}
+.container-hero-about .hero-about-title{
+  font-family: var(--font-ClashDisplay-lighy);
+  line-height: 40px;
+  font-size: 25px;
+  color: var(--color-white);
+}
+/* //////////////////////////////////////////////// */
+/* //////////////////////////////////////////////// */
+/* //////////////////////////////////////////////// */
+@media only screen and (min-width: 700px) {
+  .container-hero-about .hero-about-title{
+    text-align: center;
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .container-hero-about{
+    top: 112px;
+    height: 200px;
+  }
+}

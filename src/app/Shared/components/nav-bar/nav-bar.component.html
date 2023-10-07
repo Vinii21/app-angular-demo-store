@@ -4,19 +4,10 @@
   }"
 >
   <div class="navbar-control">
-    <input
-      class="navbar-control-search"
-      type="text"
-      placeholder="buscar..."
-      [ngClass]="{
-        'show_navbar-control-search': showSearchBar
-      }"
-    >
     <h2 routerLink="" class="navbar-control-title">Demo Tienda</h2>
     <div class="navbar-control-icons">
       <button class="navbar-control-icons_car">🛒</button>
       <button class="navbar-control-icons_user">User</button>
-      <button class="navbar-control-icons_search" (click)="handleShowSearchBar()">🔍</button>
       <button class="navbar-control-icons_menu" (click)="handleShowNavBar()">😊</button>
     </div>
   </div>
@@ -27,14 +18,15 @@
   }">
     <ul class="navbar-menu-ul">
       <li class="navbar-menu-li">Carrito</li>
-      <li class="navbar-menu-li">Sobre nosotros</li>
+      <li class="navbar-menu-li"
+        routerLink="about"
+        routerLinkActive="active"
+      >Sobre nosotros</li>
       <li class="navbar-menu-li">Contacto</li>
       <li
       class="navbar-menu-li"
-      [ngClass]="{
-        'active': activeProduct
-      }"
       routerLink="products"
+      routerLinkActive="active"
       >Productos</li>
 
     </ul>

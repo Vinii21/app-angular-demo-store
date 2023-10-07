@@ -5,12 +5,14 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { EmailSignUpComponent } from './components/email-sign-up/email-sign-up.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { DescriptionComponent } from './components/description/description.component';
 
 @NgModule({
   declarations: [
     NavBarComponent,
+    DescriptionComponent,
     EmailSignUpComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { RouterModule } from '@angular/router';
   ],
   exports: [
     NavBarComponent,
+    DescriptionComponent,
     EmailSignUpComponent,
     FooterComponent
   ]
