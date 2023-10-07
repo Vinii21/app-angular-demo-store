@@ -6,6 +6,7 @@
   width: 100%;
   height: 100%;
   position: relative;
+  z-index: 2;
 }
 .container-sidebar-products .sidebar-products-title{
   display: none;
@@ -35,12 +36,14 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  z-index: 100;
 }
 .container-sidebar-products .filter-products-container.showFilter{
-  bottom: -290px;
   height: auto;
   padding: 30px;
   background-color: var(--color-white);
+  border: 2px solid var(--color-border-dark);
+  position: fixed;
 }
 .filter-products-container .filter-type-product{
   display: flex;
@@ -86,7 +89,11 @@
     display: block;
   }
   .container-sidebar-products .filter-products-container.showFilter{
-    background-color: var(--color-transparent);
+    background-color: transparent;
+    border: none;
+    height: auto;
+    padding: 0px;
+    position: static;
   }
   .container-sidebar-products .filter-products-container{
     position: static;

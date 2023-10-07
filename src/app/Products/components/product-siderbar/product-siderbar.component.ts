@@ -42,10 +42,10 @@ export class ProductSiderbarComponent {
       }
   }
 
-  prueba():void {
+  filterProductsInList():void {
     const prices = this.selectedPriceValue.split(" ");
     this.productsService.filterProducts(this.categories, prices);
-
+    this.handleShowFilter()
   }
 
 

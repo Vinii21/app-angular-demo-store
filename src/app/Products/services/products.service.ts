@@ -86,7 +86,7 @@ export class ProductsService {
       if (comedor && silla) filteredCards = this.cards.filter(c => (c.category === 'comedor' || c.category === 'chair')&&(c.price! >= numOne && c.price! <= numTwo))
       if (silla && sofa) filteredCards = this.cards.filter(c => (c.category === 'chair' || c.category === 'sofa')&&(c.price! >= numOne && c.price! <= numTwo))
       if (sofa && comedor) filteredCards = this.cards.filter(c => (c.category === 'sofa' || c.category === 'comedor')&&(c.price! >= numOne && c.price! <= numTwo))
-      if (silla && comedor && sofa) filteredCards = this.cards
+      if (silla && comedor && sofa) filteredCards = this.cards.filter(c => c.price! >= numOne && c.price! <= numTwo);
     }
     this.cardsSubject.next(filteredCards);
   }

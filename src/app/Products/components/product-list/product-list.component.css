@@ -6,6 +6,8 @@
   flex-wrap: wrap;
   justify-content: center;
   overflow: auto;
+  position: relative;
+  z-index: 1;
 }
 .container-products-list .card-product{
   width: 200px;
