@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class EmailSignUpComponent {
-  constructor() { }
+  public iconCheckWin: string = "../../../assets/icons/iconsenal-aprobada.png";
 
 }

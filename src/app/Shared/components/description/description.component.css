@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 .container-description .container-description_title{
-  font-family: var(--font-ClashDisplay-lighy);
+  font-family: var(--font-ClashDisplay-regular);
   width: 90%;
 }
 .container-description .container-description_cards{

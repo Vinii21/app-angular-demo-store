@@ -44,5 +44,5 @@ li {
 body {
   background-color: #232424;
   overflow-x: hidden;
+  position: relative;
 }
-

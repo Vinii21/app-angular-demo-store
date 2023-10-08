@@ -22,9 +22,11 @@
   margin: 10px 0px;
   padding: 5px;
   background-color: var(--color-primary);
-  width: 170px;
+  width: 180px;
+  display: flex;
+  justify-items: center;
 }
-.container-email-signup .email-signup-ul .email-signup-li span{
+.container-email-signup .email-signup-ul .email-signup-li img{
   margin-right: 10px;
 }
 .container-email-signup .container-email-input-group{

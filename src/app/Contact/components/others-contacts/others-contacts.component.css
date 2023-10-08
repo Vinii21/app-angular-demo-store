@@ -1,0 +1,59 @@
+.container-more-contact{
+  background-color: var(--color-white);
+  width: 100%;
+  padding: 50px 24px;
+}
+.container-more-contact .more-contact-title{
+  font-family: var(--font-ClashDisplay-lighy);
+  font-size: 20px;
+}
+.container-more-contact .more-contacts{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+.container-more-contact .more-contacts .img {
+  border: 1px solid;
+  width: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-more-contact .more-contacts .img img {
+  cursor: pointer;
+}
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+@media only screen and (min-width: 700px) {
+  .container-more-contact .more-contacts{
+    justify-content: center;
+  }
+  .container-more-contact .more-contacts .img {
+    width: 35%;
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .container-more-contact .more-contact-title{
+    text-align: center;
+  }
+  .container-more-contact .more-contacts{
+    justify-content: space-evenly;
+  }
+  .container-more-contact .more-contacts .img {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container-more-contact .more-contacts{
+    justify-content: center;
+    gap: 30px;
+  }
+  .container-more-contact .more-contacts .img {
+    width: 200px;
+  }
+}

@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class DescriptionComponent {
-  constructor() { }
+  public iconoTruck: string = "../../../assets/icons/iconentrega.png"
+  public iconoCheck: string = "../../../assets/icons/iconcheque.png"
+  public iconoCard: string = "../../../assets/icons/icontarjeta-de-crdito.png"
+  public iconoPlant: string = "../../../assets/icons/iconplanta.png"
 
 }

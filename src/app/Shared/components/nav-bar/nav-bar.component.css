@@ -4,6 +4,10 @@
   flex-direction: column;
   background-color: var(--color-transparent);
   position: fixed;
+  top: 0;
+}
+.navbar-container img{
+  cursor: pointer;
 }
 .navbar-container.setPositionInProducts{
   position: fixed;
