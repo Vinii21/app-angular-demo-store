@@ -1,4 +1,4 @@
-<div class="container-products-list">
+<div class="container-products-list" *ngIf="cards.length > 0; else esto">
   <div *ngFor="let card of cards" class="card-product"
     [ngClass]="{
       'view': card.category === 'sofa'
@@ -9,3 +9,8 @@
     <span class="card-title">${{card.price}}</span>
   </div>
 </div>
+<ng-template #esto>
+  <div class="container-empty">
+    <h4>No existen coincidencias para mostrar según los criterios de búsqueda.</h4>
+  </div>
+</ng-template>
