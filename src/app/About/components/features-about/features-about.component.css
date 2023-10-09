@@ -7,19 +7,16 @@
   height: auto;
   background-color: var(--color-white);
 }
-
 .container-about-features .box-text{
   color: black;
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
-
 .container-about-features .box-text .box-text-title{
   font-family: var(--font-ClashDisplay-regular);
   margin: 20px 0px;
 }
-
 .container-about-features .box-text .box-text-description{
   font-family: var(--font-ClashDisplay-regular);
 }
@@ -85,6 +82,14 @@
   }
   .container-about-features .box-image_two{
     background-size: contain;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .container-about-features .box-text .box-text-title{
+    font-size: 30px;
+  }
+  .container-about-features .box-text .box-text-description{
+    font-size: 20px;
   }
 }
 
