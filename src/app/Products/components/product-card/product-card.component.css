@@ -1,0 +1,25 @@
+.card-product-container{
+  width: 200px;
+  height: 288px;
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.card-product-container.view{
+  width: 300px;
+}
+.card-product-container .card-img{
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 1s ease;
+  position: relative;
+  z-index: 1;
+}
+.card-product-container .card-title{
+  font-family: var(--font-ClashDisplay-lighy);
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}

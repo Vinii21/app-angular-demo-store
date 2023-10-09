@@ -12,10 +12,6 @@ const routes: Routes = [
     component: HomepageComponent
   },
   {
-    path: "products",
-    component: ProductPageComponent
-  },
-  {
     path: "about",
     component: AboutPageComponent
   },
@@ -24,8 +20,8 @@ const routes: Routes = [
     component: ContactPageComponent
   },
   {
-    path: "products/item",
-    component: OneProductPageComponent
+    path: "products",
+    loadChildren: () => import("./Products/products.module").then(m=>m.ProductsModule)
   },
   {
     path: "**",
