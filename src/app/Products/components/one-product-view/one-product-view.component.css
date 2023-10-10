@@ -94,6 +94,10 @@
     margin-top: 112px;
     padding-bottom: 50px;
   }
+  .one-product_info .one-product_info_controls{
+    justify-content: flex-start;
+    gap: 20px;
+  }
   .container-one-product .one-product_img{
     width: 50%;
     height: auto;

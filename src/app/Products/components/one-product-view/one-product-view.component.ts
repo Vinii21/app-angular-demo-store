@@ -11,6 +11,7 @@ import { Product } from 'src/app/Home/interfaces/products.interface';
 export class OneProductViewComponent implements OnInit {
 
   public saveProduct!: Product | undefined;
+  public counter: number = 1;
 
   constructor (private activatedRoute: ActivatedRoute, private productsService: ProductsService) {}
 
@@ -19,5 +20,13 @@ export class OneProductViewComponent implements OnInit {
       .subscribe((params) => {
         this.saveProduct = this.productsService.findProductById(Number(params["id"]))
       });
+  }
+
+  increaseBy(value: number):void {
+    if(value === -1 && this.counter === 1){
+      this.counter = 1
+    }else {
+      this.counter += value
+    };
   }
 }

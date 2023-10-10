@@ -16,9 +16,9 @@
     </ul>
     <div class="one-product_info_controls">
       <div class="one-product_info_controls_counter">
-        <button>+</button>
-        <span>10</span>
-        <button>-</button>
+        <button (click)="increaseBy(+1)">+</button>
+        <span>{{counter}}</span>
+        <button (click)="increaseBy(-1)">-</button>
       </div>
       <button class="one-product_info_controls_btn">Agregar</button>
     </div>

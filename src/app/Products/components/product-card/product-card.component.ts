@@ -15,4 +15,6 @@ export class ProductCardComponent {
   public price!: number | undefined;
   @Input()
   public id!: number | undefined;
+  @Input()
+  public category!: string | undefined;
 }
