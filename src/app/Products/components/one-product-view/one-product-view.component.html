@@ -1,10 +1,10 @@
 <div class="container-one-product">
   <div class="one-product_img">
-    <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" alt="">
+    <img [src]="saveProduct!.url" [alt]="saveProduct!.name">
   </div>
   <div class="one-product_info">
-    <h2 class="one-product_info-title">Nombre Producto</h2>
-    <span class="one-product_info-price">$00</span>
+    <h2 class="one-product_info-title">{{saveProduct!.name}}</h2>
+    <span class="one-product_info-price">${{saveProduct!.price}}</span>
     <h3 class="one-product_info-title-description">Descripción</h3>
     <p class="one-product_info-description">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, at. Impedit recusandae ipsam commodi officia iure incidunt? Voluptatum dolor sequi, doloribus distinctio totam repellat accusamus consequatur rem dicta atque qui!

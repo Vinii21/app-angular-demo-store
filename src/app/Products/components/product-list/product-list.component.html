@@ -1,13 +1,11 @@
 <div class="container-products-list" *ngIf="cards.length > 0; else esto">
-  <div *ngFor="let card of cards" class="card-product "
-    [ngClass]="{
-      'view': card.category === 'sofa'
-    }"
-  >
-    <img class="card-img" [src]="card.url" alt="" [routerLink]="['/products/all-products/', card.id]">
-    <span class="card-title">{{card.name }}</span>
-    <span class="card-title">${{card.price}}</span>
-  </div>
+  <product-card
+    *ngFor="let card of cards"
+    [name]="card.name"
+    [price]="card.price"
+    [url]="card.url"
+    [id]="card.id"
+  ></product-card>
 </div>
 <ng-template #esto>
   <div class="container-empty">

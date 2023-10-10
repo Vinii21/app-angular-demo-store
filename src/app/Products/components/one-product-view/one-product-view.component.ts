@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ProductsService } from '../../services/products.service';
+import { Product } from 'src/app/Home/interfaces/products.interface';
 
 @Component({
   selector: 'oneProduct-view',
@@ -7,12 +9,15 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./one-product-view.component.css']
 })
 export class OneProductViewComponent implements OnInit {
-  constructor (private activatedRoute: ActivatedRoute) {}
+
+  public saveProduct!: Product | undefined;
+
+  constructor (private activatedRoute: ActivatedRoute, private productsService: ProductsService) {}
 
   ngOnInit(): void {
     this.activatedRoute.params
       .subscribe((params) => {
-        console.log({params: params["id"]})
-      })
+        this.saveProduct = this.productsService.findProductById(Number(params["id"]))
+      });
   }
 }

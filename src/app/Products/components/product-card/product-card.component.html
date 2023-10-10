@@ -1,5 +1,5 @@
 <div class="card-product-container">
-    <img class="card-img" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9nYXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="" width="200">
-    <span class="card-title">nombre</span>
-    <span class="card-title">$00</span>
+    <img [routerLink]="['/products/all-products',id]" class="card-img" [src]="url" [alt]="name" width="200">
+    <span class="card-title">{{name}}</span>
+    <span class="card-title">${{price}}</span>
 </div>

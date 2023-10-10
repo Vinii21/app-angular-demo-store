@@ -5,7 +5,6 @@ import { Categories } from '../interfaces/categories.interface';
 
 @Injectable({providedIn: 'root'})
 export class ProductsService {
-  constructor() { }
 
    private cards: Product[] = [
     {
@@ -79,6 +78,7 @@ export class ProductsService {
       price: 450
     },
   ]
+  private findProduct!: Product | undefined;
   private cardsSubject = new BehaviorSubject<Product[]>(this.cards);
   cards$ = this.cardsSubject.asObservable();
 
@@ -99,5 +99,14 @@ export class ProductsService {
       if (silla && comedor && sofa) filteredCards = this.cards.filter(c => c.price! >= numOne && c.price! <= numTwo);
     }
     this.cardsSubject.next(filteredCards);
+  }
+
+  findProductById(id: number):Product | undefined {
+    this.findProduct = this.cards.find(p=>p.id === id);
+    return this.findProduct;
+  }
+  get filterProductsByCategory():Product[] {
+    const result = this.cards.filter(p=>p.category === this.findProduct!.category && p.id !== this.findProduct!.id);
+    return result;
   }
 }
