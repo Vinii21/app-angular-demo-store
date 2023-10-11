@@ -40,9 +40,6 @@
 .navbar-container .navbar-control .navbar-control-icons {
   display: flex;
 }
-.navbar-container .navbar-control .navbar-control-icons .navbar-control-icons_car {
-  display: none;
-}
 .navbar-container .navbar-control .navbar-control-icons button {
   cursor: pointer;
   margin: 0px 3px;
@@ -117,12 +114,6 @@
     position: absolute;
     right: 50px;
   }
-  .navbar-container .navbar-control .navbar-control-icons .navbar-control-icons_car {
-    display: block;
-  }
-  .navbar-container .navbar-control .navbar-control-icons .navbar-control-icons_search {
-    display: none;
-  }
   .navbar-container .navbar-control .navbar-control-icons .navbar-control-icons_menu {
     display: none;
   }
@@ -137,9 +128,6 @@
     display: flex;
     width: 80%;
     border-top: 1px solid var(--color-border-grey);
-  }
-  .navbar-container .navbar-menu .navbar-menu-ul .navbar-menu-li:nth-child(1) {
-    display: none;
   }
   .navbar-container .navbar-menu .navbar-menu-ul .navbar-menu-li {
     padding: 10px 0px;
