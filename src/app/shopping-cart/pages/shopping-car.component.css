@@ -1,0 +1,35 @@
+.container-shopping-car{
+  margin-top: 69px;
+  background-color: var(--color-white);
+}
+.container-shopping-car .shopping-car_title{
+  font-family: var(--font-ClashDisplay-regular);
+  padding: 20px;
+}
+.container-shopping-car .shopping-car_products{
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.shopping-car_products .notProducts{
+  font-family: var(--font-ClashDisplay-lighy);
+  margin: 30px;
+  text-align: center;
+}
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+@media only screen and (min-width: 800px) {
+  .container-shopping-car{
+    margin-top: 112px;
+  }
+}
+@media only screen and (min-width: 1030px) {
+  .container-shopping-car{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 112px;
+  }
+}

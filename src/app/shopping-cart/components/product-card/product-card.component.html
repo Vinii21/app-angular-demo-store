@@ -1,0 +1,9 @@
+<div *ngFor="let product of shoppingCar" class="container-product-car">
+  <img class="product-car_img" [src]="product.url" [alt]="product.name" width="200">
+  <div class="product-car-info">
+    <h4 class="product-car-info_title size_item_info">{{product.name}} <br> ${{product.price}}</h4>
+    <span class="product-car-info_price size_item_info">$ {{product.price * (product.amount || 1)}}</span>
+    <shared-counter [counter]="product.amount || 1" (counterChange)="updatePrice(product, $event)" class="product-car-info_counter size_item_info"></shared-counter>
+  </div>
+</div>
+

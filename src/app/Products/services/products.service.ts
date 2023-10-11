@@ -82,6 +82,8 @@ export class ProductsService {
   private cardsSubject = new BehaviorSubject<Product[]>(this.cards);
   cards$ = this.cardsSubject.asObservable();
 
+  public shoppingCar: Product[] = [];
+
   filterProducts(categories: Categories, prices: string[]): void {
     const {todo, comedor, silla, sofa} = categories;
     const numOne = Number(prices[0]);
@@ -100,7 +102,6 @@ export class ProductsService {
     }
     this.cardsSubject.next(filteredCards);
   }
-
   findProductById(id: number):Product | undefined {
     this.findProduct = this.cards.find(p=>p.id === id);
     return this.findProduct;
@@ -109,4 +110,16 @@ export class ProductsService {
     const result = this.cards.filter(p=>p.category === this.findProduct!.category && p.id !== this.findProduct!.id);
     return result;
   }
+
+  addToShoppingCar(id: number, counter: number):void {
+    const product: Product | undefined = this.shoppingCar.find(p=>p.id===id);
+    if(product) {
+      product.amount = (product.amount || 0) + counter;
+    } else {
+      const newProduct: Product | undefined = this.cards.find(p=>p.id===id);
+      newProduct!.amount = counter;
+      this.shoppingCar.push(newProduct!)
+    }
+  }
+
 }

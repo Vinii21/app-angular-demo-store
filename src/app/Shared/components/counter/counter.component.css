@@ -1,0 +1,23 @@
+.one-product_info_controls_counter{
+  height: 50px;
+  width: 120px;
+  background-color: var(--color-grey-dark);
+}
+.one-product_info_controls_counter button{
+  height: 100%;
+  width: 40%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+.one-product_info_controls_counter button:hover{
+  background-color: var(--color-bg-dark);
+}
+.one-product_info_controls_counter span{
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  width: 20%;
+  font-size: 18px;
+}

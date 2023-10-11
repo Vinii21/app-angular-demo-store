@@ -6,6 +6,7 @@ import { EmailSignUpComponent } from './components/email-sign-up/email-sign-up.c
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { DescriptionComponent } from './components/description/description.component';
+import { CounterComponent } from './components/counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { DescriptionComponent } from './components/description/description.compo
     DescriptionComponent,
     EmailSignUpComponent,
     FooterComponent,
+    CounterComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { DescriptionComponent } from './components/description/description.compo
     NavBarComponent,
     DescriptionComponent,
     EmailSignUpComponent,
-    FooterComponent
+    FooterComponent,
+    CounterComponent
   ]
 })
 export class SharedModule { }

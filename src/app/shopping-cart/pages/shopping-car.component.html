@@ -1,0 +1,14 @@
+<div class="container-shopping-car">
+  <h2 class="shopping-car_title">Tu carrito de compras</h2>
+  <div class="shopping-car_products" *ngIf="shoppingCar.length > 0; else notProducts">
+    <shopping-header-shopping-car></shopping-header-shopping-car>
+    <shopping-product-card></shopping-product-card>
+  </div>
+  <ng-template #notProducts>
+    <div class="shopping-car_products">
+      <shopping-header-shopping-car></shopping-header-shopping-car>
+      <h2 class="notProducts">Aún no agregas ningún producto a tú carrito</h2>
+    </div>
+  </ng-template>
+  <shopping-sub-total></shopping-sub-total>
+</div>

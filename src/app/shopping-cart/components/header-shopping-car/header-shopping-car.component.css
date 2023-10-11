@@ -1,0 +1,33 @@
+.shopping-car_products-header{
+  display: none;
+}
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+@media only screen and (min-width: 700px) {
+ .shopping-car_products-header{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+  }
+ .shopping-car_products-header span{
+    font-family: var(--font-ClashDisplay-medium);
+    font-size: 18px;
+    width: 25%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1030px) {
+.shopping-car_products-header span{
+    font-family: var(--font-ClashDisplay-regular);
+    font-size: 20px;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
+.shopping-car_products-header span.products-header_33{
+    width: 51%;
+    text-align: center;
+  }
+}

@@ -12,6 +12,7 @@ export class OneProductViewComponent implements OnInit {
 
   public saveProduct!: Product | undefined;
   public counter: number = 1;
+  private curentId!: number;
 
   constructor (private activatedRoute: ActivatedRoute, private productsService: ProductsService) {}
 
@@ -19,6 +20,7 @@ export class OneProductViewComponent implements OnInit {
     this.activatedRoute.params
       .subscribe((params) => {
         this.saveProduct = this.productsService.findProductById(Number(params["id"]))
+        this.curentId = Number(params["id"]);
       });
   }
 
@@ -28,5 +30,9 @@ export class OneProductViewComponent implements OnInit {
     }else {
       this.counter += value
     };
+  }
+
+  addShoppingCar() {
+    this.productsService.addToShoppingCar(this.curentId, this.counter);
   }
 }

@@ -1,0 +1,47 @@
+.container-sub-total{
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 10px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.container-sub-total .sub-total{
+  font-family: var(--font-ClashDisplay-lighy);
+  font-size: 25px;
+  color: var(--color-dark-primary);
+}
+.container-sub-total .sub-total span{
+  font-size: 30px;
+}
+.container-sub-total .sub-total_info{
+  font-family: var(--font-ClashDisplay-lighy);
+  font-size: 18px;
+  color: var(--color-dark-primary);
+}
+.container-sub-total .sub-total_btn{
+  border: none;
+  padding: 10px;
+  font-family: var(--font-ClashDisplay-regular);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  transition: .5s all linear;
+  font-size: 17px;
+  align-self: center;
+  width: 90%;
+}
+.container-sub-total .sub-total_btn:hover{
+  background-color: var(--color-primary-hover);
+}
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////// */
+@media only screen and (min-width: 800px) {
+  .container-sub-total .sub-total_btn{
+    align-self: flex-end;
+    width: 200px;
+  }
+}

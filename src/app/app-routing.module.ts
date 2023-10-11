@@ -5,6 +5,7 @@ import { ProductPageComponent } from './Products/page/product-page/product-page.
 import { AboutPageComponent } from './About/pages/about-page.component';
 import { ContactPageComponent } from './Contact/pages/contact-page/contact-page.component';
 import { OneProductPageComponent } from './Products/page/one-product-page/one-product-page.component';
+import { ShoppingCarPage } from './shopping-cart/pages/shopping-car.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: "products",
     loadChildren: () => import("./Products/products.module").then(m=>m.ProductsModule)
+  },
+  {
+    path: "shopping/car",
+    component: ShoppingCarPage
   },
   {
     path: "**",

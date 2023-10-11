@@ -42,7 +42,7 @@ li {
 }
 
 body {
-  background-color: #232424;
+  background-color: var(--color-white);
   overflow-x: hidden;
   position: relative;
 }

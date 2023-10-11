@@ -9,6 +9,7 @@ import { SharedModule } from './Shared/shared.module';
 import { ProductsModule } from './Products/products.module';
 import { AboutModule } from './About/about.module';
 import { ContactModule } from './Contact/contact.module';
+import { ShoppingCartModule } from './shopping-cart/shopping-cart.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContactModule } from './Contact/contact.module';
     SharedModule,
     ProductsModule,
     AboutModule,
-    ContactModule
+    ContactModule,
+    ShoppingCartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
