@@ -29,6 +29,10 @@ const routes: Routes = [
     component: ShoppingCarPage
   },
   {
+    path: "client",
+    loadChildren: () => import("./User/user.module").then(m=>m.UserModule)
+  },
+  {
     path: "**",
     redirectTo: ""
   }

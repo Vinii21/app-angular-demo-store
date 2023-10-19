@@ -1,0 +1,10 @@
+<form class="form-login">
+  <h2 class="form-login_title">{{typeForm ? "Iniciar sesión" : "Registrarme"}}</h2>
+  <input *ngIf="!typeForm" [(ngModel)]="form.name" name="name" class="form-login_input" type="text" placeholder="Nombre">
+  <input [(ngModel)]="form.email" name="email" class="form-login_input" type="email" placeholder="Email">
+  <div class="form-login_div">
+    <input [(ngModel)]="form.password" name="password" [type]="typeInputPassword" placeholder="Contraseña">
+    <span (click)="handleTypeInputPassword()" class="btn_password">👁</span>
+  </div>
+  <button class="form-login_btn">{{typeForm ? "Iniciar Sesión" : "Registrate"}}</button>
+</form>

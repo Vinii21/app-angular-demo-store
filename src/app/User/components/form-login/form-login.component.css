@@ -1,0 +1,67 @@
+.form-login{
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 69px;
+}
+.form-login .form-login_title{
+  font-family: var(--font-ClashDisplay-medium);
+}
+.form-login .form-login_input{
+  padding: 10px;
+  font-family: var(--font-ClashDisplay-regular);
+  font-size: 18px;
+  width: 90%;
+  border: 1px solid var(--color-grey-dark);
+}
+.form-login .form-login_div {
+  padding: 0px;
+  position: relative;
+  width: 90%;
+  border: 1px solid var(--color-grey-dark);
+}
+.form-login .form-login_div input{
+  height: 100%;
+  padding-right: 40px;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  font-family: var(--font-ClashDisplay-regular);
+  font-size: 18px;
+  border: none;
+}
+.form-login .form-login_div .btn_password{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.form-login .form-login_btn{
+  padding: 10px;
+  border: none;
+  font-family: var(--font-ClashDisplay-medium);
+  color: var(--color-white);
+  width: 80%;
+  font-size: 18px;
+  background-color: var(--color-primary);
+  transition: 1s all linear;
+  cursor: pointer;
+}
+.form-login .form-login_btn:hover{
+  background-color: var(--color-primary-hover);
+}
+/* /////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////// */
+@media only screen and (min-width: 800px) {
+  .form-login{
+    margin-top: 112px;
+  }
+}
