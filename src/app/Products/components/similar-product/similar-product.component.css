@@ -18,6 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 400px;
 }
 .similar-product_container-carrusel .carrusel-item img{
   width: 100%;

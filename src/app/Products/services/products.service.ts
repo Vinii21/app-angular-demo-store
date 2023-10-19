@@ -78,11 +78,12 @@ export class ProductsService {
       price: 450
     },
   ]
-  private findProduct!: Product | undefined;
+  public findProduct!: Product | undefined;
   private cardsSubject = new BehaviorSubject<Product[]>(this.cards);
   cards$ = this.cardsSubject.asObservable();
 
   public shoppingCar: Product[] = [];
+  public similarProducts: Product[] = [];
 
   filterProducts(categories: Categories, prices: string[]): void {
     const {todo, comedor, silla, sofa} = categories;
@@ -104,11 +105,12 @@ export class ProductsService {
   }
   findProductById(id: number):Product | undefined {
     this.findProduct = this.cards.find(p=>p.id === id);
+    this.filterProductsByCategory()
     return this.findProduct;
   }
-  get filterProductsByCategory():Product[] {
-    const result = this.cards.filter(p=>p.category === this.findProduct!.category && p.id !== this.findProduct!.id);
-    return result;
+  filterProductsByCategory():void {
+      this.similarProducts = this.cards.filter(p=>p.category === this.findProduct!.category && p.id !== this.findProduct!.id);
+      console.log(this.similarProducts)
   }
 
   addToShoppingCar(id: number, counter: number):void {

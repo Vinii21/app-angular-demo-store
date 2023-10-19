@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { ProductsService } from '../../services/products.service';
 import { Product } from 'src/app/Home/interfaces/products.interface';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'product-similar-product',
@@ -9,14 +10,14 @@ import { Product } from 'src/app/Home/interfaces/products.interface';
 })
 export class SimilarProductComponent implements OnInit {
 
-  constructor (private productsService: ProductsService) {}
+  constructor (private productsService: ProductsService, private activatedRoute: ActivatedRoute) {}
 
-  public similarProducts!: Product[];
   private anchoViewport = window.innerWidth || document.documentElement.clientWidth;
   public slidesPerView: number = 2;
+  public saveProduct!: Product | undefined;
+  private curentId!: number;
 
   ngOnInit(): void {
-    this.similarProducts = this.productsService.filterProductsByCategory;
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if(this.anchoViewport >= 1200) {
       this.slidesPerView = 4
@@ -27,7 +28,12 @@ export class SimilarProductComponent implements OnInit {
     }
   }
 
-  onProductCardClick():void {
-    location.reload();
+  get filterProductsByCategory():Product[] {
+    return this.productsService.similarProducts
+  };
+
+  startFilter(id: number) {
+    this.productsService.findProductById(id)
   }
+
 }

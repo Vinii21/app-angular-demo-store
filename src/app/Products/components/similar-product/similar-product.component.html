@@ -3,16 +3,16 @@
   <swiper-container class="similar-product_container-carrusel"  [slidesPerView]="slidesPerView" speed="500" loop="true">
     <swiper-slide
     class="carrusel-item"
-      *ngFor="let side of similarProducts"
+      *ngFor="let side of filterProductsByCategory"
     >
       <product-card
-        [name]="side.name"
-        [price]="side.price"
-        [url]="side.url"
-        [id]="side.id"
-        [category]="side.category"
-        (click)="onProductCardClick()"
-      ></product-card>
+      [name]="side.name"
+      [price]="side.price"
+      [url]="side.url"
+      [category]="side.category"
+      (click)="startFilter(side.id)"
+      [routerLink]="['/products/all-products',side.id]"
+      />
     </swiper-slide>
   </swiper-container>
 

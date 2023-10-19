@@ -2,8 +2,9 @@
   [ngClass]="{
     'view': category === 'sofa'
   }"
+
 >
-    <img [routerLink]="['/products/all-products',id]" class="card-img" [src]="url" [alt]="name" width="200">
+    <img class="card-img" [src]="url" [alt]="name" width="200">
     <span class="card-title">{{name}}</span>
     <span class="card-title">${{price}}</span>
 </div>

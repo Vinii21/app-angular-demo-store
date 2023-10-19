@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ProductsService } from '../../services/products.service';
 
 @Component({
   selector: 'product-card',
@@ -17,4 +18,6 @@ export class ProductCardComponent {
   public id!: number | undefined;
   @Input()
   public category!: string | undefined;
+
+  constructor (private productsService: ProductsService) {}
 }

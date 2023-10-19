@@ -6,7 +6,8 @@
     [url]="card.url"
     [id]="card.id"
     [category]="card.category"
-  ></product-card>
+    [routerLink]="['/products/all-products',card.id]"
+  />
 </div>
 <ng-template #esto>
   <div class="container-empty">
